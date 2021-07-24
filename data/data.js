@@ -1,5 +1,5 @@
 const camelcaseKeys = require('camelcase-keys')
-const { pool, poolPromise } = require('./config/mssql.connect')
+const { pool, poolPromise } = require('../config/mssql.connect')
 
 module.exports = {
     sqlQuery: async (guid) => {

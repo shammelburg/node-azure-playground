@@ -1,10 +1,10 @@
 const express = require('express')
 const asyncWrapper = require('./asyncWrapper')
-const checkPoolConnectionStatus = require('./checkPoolConnectionStatus')
-const { sqlQuery, sqlStoredProcedure } = require('./data')
+const checkPoolConnectionStatus = require('../checkPoolConnectionStatus')
+const { sqlQuery, sqlStoredProcedure } = require('../data/data')
 const app = express()
 
-const { pool } = require('./config/mssql.connect')
+const { pool } = require('../config/mssql.connect')
 
 app.get('/', asyncWrapper(async (req, res, next) => {
     checkPoolConnectionStatus(pool)

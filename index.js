@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const camelcaseKeys = require('camelcase-keys')
 
-const { sqlQuery, sqlStoredProcedure } = require('./data')
+const { sqlQuery, sqlStoredProcedure } = require('./data/data')
 const { sql, pool, poolPromise } = require('./config/mssql.connect');
 const checkPoolConnectionStatus = require('./checkPoolConnectionStatus')
 
