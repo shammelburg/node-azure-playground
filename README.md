@@ -4,6 +4,11 @@ These are single file examples on how you would access MS SQL with Node alone or
 
 In each of the examples it calls a hard-coded query and a stored procedure.
 
+
+**I've now added Azure Storage and Cognitive Services.**
+
+
+
 Below are some of the highlights in the documentation.
 
 #### Single Connection Pool
